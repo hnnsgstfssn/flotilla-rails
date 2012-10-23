@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.authors     = ["Hannes Gustafsson", "Joshua Miller", "Mathias Sulser", "Jerry Cheung", "Logan Leger"]
 
-  s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README"]
+  s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE", "README.md"]
 
   s.add_dependency "json", Flotilla::Rails::JSON_VERSION
   s.add_dependency "flot-rails", Flotilla::Rails::FLOT_RAILS_VERSION
