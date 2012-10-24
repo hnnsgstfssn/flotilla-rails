@@ -51,7 +51,7 @@ module Flotilla
           EOF
         end        
         
-        html_options[:js_tags] ? javascript_tag(chart_js) : chart_js
+        chart_js = html_options[:js_tags] ? javascript_tag(chart_js) : chart_js
         output = html_options[:placeholder_tag] ? chart_js + content_tag(:div, nil, :id => placeholder, :style => "width:#{width}px;height:#{height}px;") : chart_js
         output.html_safe
       end
