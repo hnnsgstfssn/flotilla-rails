@@ -35,8 +35,8 @@ module Flotilla
 
         if html_options[:js_includes]
           chart_js = <<-EOF
-          <!--[if IE]><script language="javascript" type="text/javascript" src="/javascripts/excanvas.pack.js"></script><![endif]-->
-          <script language="javascript" type="text/javascript" src="/javascripts/jquery.flot.pack.js"></script>
+          <!--[if IE]><script language="javascript" type="text/javascript" src="/assets/excanvas.js"></script><![endif]-->
+          <script language="javascript" type="text/javascript" src="/assets/jquery.flot.js"></script>
           <script type="text/javascript">
             $(function () {
               jQuery.plot($('##{placeholder}'), #{data}, #{options.to_json});
